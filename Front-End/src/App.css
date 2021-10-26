@@ -1,0 +1,50 @@
+.Container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.Container .Card {
+    width: 40rem;
+    height: 30rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #303030;
+
+    border: 0;
+    border-radius: 0.8rem;
+
+    color: #ffffff;
+
+    box-shadow: 0 0.6rem 1rem #151515
+}
+
+.Container .Card .Card_Title {
+    margin: 1rem 0;
+
+    font-family: 'Consolas';
+    text-shadow: 0 0 2px #ffffff;
+
+    transition: 0.5s;
+}
+
+.Container .Card .Card_Title:hover {
+    text-shadow: 0 0 5px #ffffff;
+    cursor: default;
+}
+
+.Container .Card hr {
+    width: 80%;
+
+    margin-bottom: 3rem;
+
+    transition: 0.5s;
+}
+
+.Container .Card:hover > hr {
+    width: 90%;
+}
