@@ -18,14 +18,13 @@
     border: 0;
     border-radius: 0.8rem;
 
-    color: #ffffff;
-
     box-shadow: 0 0.6rem 1rem #151515
 }
 
 .Container .Card .Card_Title {
     margin: 1rem 0;
 
+    color: #ffffff;
     font-family: 'Consolas';
     text-shadow: 0 0 2px #ffffff;
 
@@ -33,8 +32,14 @@
 }
 
 .Container .Card .Card_Title:hover {
-    text-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 5px #00eeff;
     cursor: default;
+}
+
+.Container .Card:hover > .Card_Title {
+    color: #00eeff;
+    text-shadow: 0 0 2px #00eeff;
+
 }
 
 .Container .Card hr {
@@ -47,4 +52,67 @@
 
 .Container .Card:hover > hr {
     width: 90%;
+}
+
+.Container .Card form {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+
+    transition: 0.5s;
+}
+
+.Container .Card form label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Consolas';
+}
+
+.Container .Card form input {
+    background-color: #303030;
+
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #ffffff;
+
+    color: #ffffff;
+
+    height: 2rem;
+
+    padding-left: 0.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.Container .Card form input:hover {
+    border-bottom: 2px solid #00eeff;
+}
+
+.Container .Card form input:focus{
+    outline: none;
+
+    border: 0;
+    border-right: 2px solid #00eeff;
+    border-left: 2px solid #00eeff;
+
+    background-color: #202020;
+}
+
+.Container .Card form button {
+    align-self: flex-end;
+
+    height: 3rem;
+    width: 25%;
+
+    border: 0;
+    border-radius: 0.8rem;
+
+    background-color: #0099ff;
+
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 3.2rem;
 }

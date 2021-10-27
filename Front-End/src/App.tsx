@@ -16,8 +16,9 @@ function App() {
           <label htmlFor="senha">Senha</label>
           <input type="password" id="senha" />
 
-          <button type="submit">Continuar</button>
+          <button type="submit">CONTINUAR</button>
         </form>
+        <hr/>
       </div>
     </div>
   );
